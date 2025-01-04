@@ -1,0 +1,89 @@
+@import 'primeicons/primeicons.css';
+@import 'primeflex/primeflex.css';
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+$bg-color: #121212;
+$box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, .5);
+
+html, body {
+  margin: 0;
+  height: 100dvh;
+  font-family: "Abel", serif;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+  overflow-x: hidden;
+
+  background-color: color-mix(in srgb, $bg-color, transparent 22%);
+  background-blend-mode: multiply;
+
+  background-image: url('https://w.wallhaven.cc/full/4v/wallhaven-4vdx18.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p {
+  text-indent: 2rem;
+}
+
+.box-shadow-default {
+  box-shadow: $box-shadow;
+}
+
+.menu {
+  background-color: $bg-color;
+  box-shadow: $box-shadow;
+}
+
+app-bio {
+  img {
+    border-radius: 1616px;
+    object-fit: cover;
+    object-position: 100% 0
+  }
+}
+
+.gallery-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.p-galleria-content, p-galleriaitem {
+  height: 100%;
+  width: 100%;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.p-galleria-next-button, .p-galleria-prev-button {
+  z-index: 9;
+}
+
+.featured {
+  width: 93%;
+  max-width: 750px;
+}
+
+@media screen and (min-width: 768px) {
+  .featured {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .featured {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .featured {
+    width: 60%;
+  }
+}
