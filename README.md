@@ -1,59 +1,60 @@
-# Fotografie
+# [Fotografie](https://github.com/LuizCasagrande/fotografie)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+Fotografie é um template de aplicação Angular projetado para ser reutilizado com facilidade por outros usuários,
+nele é possível apresentar e compartilhar fotos de uma maneira intuitiva e eficiente.
 
-## Development server
+## Índice
 
-To start a local development server, run:
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Personalização](#personalização)
+- [Contribuições](#contribuições)
 
-```bash
-ng serve
-```
+## Pré-requisitos
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Certifique-se de ter o Node.js e o Angular CLI instalados em sua máquina antes de começar.
 
-## Code scaffolding
+- Node.js: [https://nodejs.org/](https://nodejs.org/)
+- Angular CLI: execute `npm install -g @angular/cli`
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Instalação
 
-```bash
-ng generate component component-name
-```
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/LuizCasagrande/fotografie.git
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd fotografie
+   ```
 
-```bash
-ng generate --help
-```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-## Building
+## Uso
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Para iniciar o servidor de desenvolvimento, execute:
 
 ```bash
-ng e2e
+npm start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Abra o navegador e acesse `http://localhost:4200/`
 
-## Additional Resources
+## Personalização
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para adaptar o template às suas necessidades, edite os seguintes arquivos:
+
+- **`src/app/app.constants.ts`**: Altere as constantes adicionando suas próprias informações.
+- **`src/index.html`**: Atualize as informações do HTML conforme necessário.
+
+Para hospedar as imagens é possível utilizar o próprio github, criando um repositório chamado
+["fotografie-assets"](https://github.com/LuizCasagrande/fotografie-assets) por exemplo.
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
