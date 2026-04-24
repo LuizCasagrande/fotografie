@@ -1,4 +1,4 @@
-const baseUrl = 'https://raw.githubusercontent.com/LuizCasagrande/fotografie-assets/refs/heads/main';
+const baseUrl = 'https://raw.githubusercontent.com/LuizCasagrande/assets/refs/heads/main/fotografie';
 
 export const APP_CONSTANTS = {
   NAME: 'Luiz Casagrande',
@@ -22,21 +22,14 @@ export const APP_CONSTANTS = {
     'Portfólio',
     'Portfólio de fotografia',
     'Ensaios',
-    'Ensaios femininos',
     'Ensaios fotográficos',
     'Fotografia',
     'Fotografia profissional',
     'Fotografia criativa',
     'Fotografia artística',
     'Fotografia documental',
-    'Fotografia lifestyle',
-    'Fotografia editorial',
-    'Fotografia de gestantes',
-    'Fotografia de casamento',
-    'Fotografia de noivado',
     'Fotografia de eventos',
     'Fotografia de moda',
-    'Fotografia de família',
     'Sessão de fotos personalizadas',
     'Fotografia para empresas',
     'Fotografia para publicidade',
@@ -44,7 +37,7 @@ export const APP_CONSTANTS = {
   ],
 
   CATEGORIES: [{
-    name: 'Ensaios Femininos',
+    name: 'Natureza',
     images: [{
       src: `${baseUrl}/category1/image1.jpg`,
       alt: 'image1',
@@ -66,7 +59,7 @@ export const APP_CONSTANTS = {
       alt: 'image5',
     }],
   }, {
-    name: 'Gestantes',
+    name: 'Arquitetura',
     images: [{
       src: `${baseUrl}/category2/image6.jpg`,
       alt: 'image6',
@@ -88,7 +81,7 @@ export const APP_CONSTANTS = {
       alt: 'image10',
     }],
   }, {
-    name: 'Casamentos',
+    name: 'Viagem',
     images: [{
       src: `${baseUrl}/category3/image11.jpg`,
       alt: 'image11',
@@ -107,7 +100,7 @@ export const APP_CONSTANTS = {
       featured: true,
     }],
   }, {
-    name: 'Famílias',
+    name: 'Experimental',
     images: [{
       src: `${baseUrl}/category4/image15.jpg`,
       alt: 'image15',
