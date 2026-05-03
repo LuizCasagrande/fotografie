@@ -1,6 +1,6 @@
-import {Injectable, Pipe, PipeTransform} from '@angular/core';
-import {APP_CONSTANTS} from '../../app.constants';
-import {StringUtils} from '../string.utils';
+import { Injectable, Pipe, PipeTransform } from '@angular/core';
+import { CONSTANTS } from '../../app.constants';
+import { StringUtils } from '../string-utils';
 
 @Injectable({
   providedIn: 'root',
@@ -10,16 +10,16 @@ import {StringUtils} from '../string.utils';
   standalone: true,
 })
 export class CategoryNamePipe implements PipeTransform {
-
-  readonly CATEGORIES = APP_CONSTANTS.CATEGORIES.map(category => category.name);
+  private categories = CONSTANTS.CATEGORIES.map((c) => c.name);
 
   transform(value: string): string {
     value = value || '';
 
-    const categoryName = value.split('-')
-      .map(v => v.charAt(0).toUpperCase() + v.slice(1).toLowerCase())
+    const categoryName = value
+      .split('-')
+      .map((v) => v.charAt(0).toUpperCase() + v.slice(1).toLowerCase())
       .join(' ');
 
-    return this.CATEGORIES.filter(name => categoryName === StringUtils.normalize(name))[0];
+    return this.categories.filter((name) => categoryName === StringUtils.normalize(name))[0];
   }
 }

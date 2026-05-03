@@ -1,0 +1,19 @@
+<div class="flex flex-column align-items-center gap-6">
+  <div class="mt-7">
+    <img [alt]="constants.NAME"
+         [ngSrc]="constants.IMAGE_URL"
+         class="border-circle"
+         height="256"
+         priority
+         width="256">
+  </div>
+  <div class="w-9 md:w-6">
+    <p class="text-4xl m-0">{{ constants.BIO }}</p>
+  </div>
+  <div class="text-2xl text-center mb-7">
+    <div>Contato:</div>
+    <a class="text-primary"
+       href="mailto:{{ constants.EMAIL }}"
+       target="_blank">{{ constants.EMAIL }}</a>
+  </div>
+</div>

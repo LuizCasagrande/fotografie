@@ -1,10 +1,10 @@
-import {Routes} from '@angular/router';
-import {BioComponent} from './bio/bio.component';
-import {GalleryComponent} from './gallery/gallery.component';
+import { Routes } from '@angular/router';
+import { Bio } from './bio/bio';
+import { Gallery } from './gallery/gallery';
 
 export const routes: Routes = [
-  {path: 'bio', component: BioComponent},
-  {path: 'gallery', component: GalleryComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'bio'},
-  {path: '**', pathMatch: 'full', redirectTo: 'bio'},
+  { path: 'gallery', component: Gallery },
+  { path: 'bio', component: Bio },
+  { path: '', redirectTo: 'bio', pathMatch: 'full' },
+  { path: '**', redirectTo: 'bio', pathMatch: 'full' },
 ];

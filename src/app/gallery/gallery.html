@@ -1,0 +1,41 @@
+<div class="flex flex-column align-items-center">
+  <h3 class="font-light text-4xl my-5">{{ title() }}</h3>
+
+  <p-galleria [containerStyle]="{border: 'none', borderRadius: '0'}"
+              [showIndicatorsOnItem]="true"
+              [showIndicators]="true"
+              [showItemNavigators]="true"
+              [showThumbnails]="false"
+              [value]="starredImages()"
+              class="border-none">
+    <ng-template #item let-image>
+      <div class="galleria">
+        <img [alt]="image.alt"
+             [ngSrc]="image.src"
+             fill
+             priority />
+      </div>
+    </ng-template>
+  </p-galleria>
+</div>
+
+<div class="w-11 m-auto py-6">
+  <div class="flex flex-wrap">
+    @for (image of images(); track image.alt) {
+      <div class="w-12 md:w-6 lg:w-4 xl:w-3 relative inline-block">
+        @if (image.starred) {
+          <i class="pi pi-star text-2xl starred"></i>
+        }
+        <p-image [alt]="image.alt"
+                 [preview]="true"
+                 [src]="image.src"
+                 class="m-2"
+                 imageClass="w-full">
+          <ng-template #indicator>
+            <i class="pi pi-eye text-4xl"></i>
+          </ng-template>
+        </p-image>
+      </div>
+    }
+  </div>
+</div>

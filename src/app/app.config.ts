@@ -1,21 +1,24 @@
-import {ApplicationConfig, provideZoneChangeDetection} from '@angular/core';
-import {provideRouter} from '@angular/router';
+import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { provideRouter } from '@angular/router';
 
-import {routes} from './app.routes';
-import {provideClientHydration, withEventReplay} from '@angular/platform-browser';
-import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
-import {providePrimeNG} from 'primeng/config';
-import {MyPreset} from './primeng.preset';
+import { routes } from './app.routes';
+import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { providePrimeNG } from 'primeng/config';
+import { Noir } from './primeng-preset';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideZoneChangeDetection({eventCoalescing: true}),
-    provideRouter(routes), provideClientHydration(withEventReplay()),
-    provideAnimationsAsync(),
+    provideBrowserGlobalErrorListeners(),
+    provideRouter(routes),
+    provideClientHydration(withEventReplay()),
     providePrimeNG({
+      ripple: true,
       theme: {
-        preset: MyPreset,
-      }
+        preset: Noir,
+        options: {
+          darkModeSelector: '.dark-mode',
+        },
+      },
     }),
-  ]
+  ],
 };

@@ -1,0 +1,22 @@
+<div class="surface-0 shadow-4 px-2">
+  <div class="h-4rem flex align-items-center justify-content-center sm:justify-content-start">
+    <a [href]="constants.INSTAGRAM_LINK" target="_blank">
+      <p-button [text]="true" icon="pi pi-instagram" size="large" />
+    </a>
+    <a [href]="constants.FACEBOOK_LINK" target="_blank">
+      <p-button [text]="true" icon="pi pi-facebook" size="large" />
+    </a>
+    <a [href]="constants.WHATSAPP_LINK" target="_blank">
+      <p-button [text]="true" icon="pi pi-whatsapp" size="large" />
+    </a>
+  </div>
+  <div class="h-5rem flex align-items-center justify-content-center flex-column gap-1">
+    <h1 class="font-light">{{ constants.NAME }}</h1>
+    <h2 class="font-light">Fotografia</h2>
+  </div>
+  <div class="h-4rem flex align-items-center justify-content-start">
+    <p-menubar [model]="menu"
+               breakpoint="0"
+               class="bg-transparent border-none text-xl p-0" />
+  </div>
+</div>

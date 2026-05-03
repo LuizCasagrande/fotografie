@@ -1,7 +1,7 @@
 # [Fotografie](https://github.com/LuizCasagrande/fotografie)
 
-Fotografie é um template de aplicação Angular projetado para ser reutilizado com facilidade por outros usuários,
-nele é possível apresentar e compartilhar fotos de uma maneira intuitiva e eficiente.
+Fotografie é uma aplicação em Angular projetada para ser reutilizada com facilidade por outros usuários.
+Ela permite apresentar e compartilhar fotos de maneira intuitiva e eficiente.
 
 ## Índice
 
