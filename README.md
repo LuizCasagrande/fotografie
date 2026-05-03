@@ -50,10 +50,9 @@ Abra o navegador e acesse `http://localhost:4200/`
 Para adaptar o template às suas necessidades, edite os seguintes arquivos:
 
 - **`src/app/app.constants.ts`**: Altere as constantes adicionando suas próprias informações.
-- **`src/index.html`**: Atualize as informações do HTML conforme necessário.
 
 Para hospedar as imagens é possível utilizar o próprio github, criando um repositório chamado
-["fotografie-assets"](https://github.com/LuizCasagrande/fotografie-assets) por exemplo.
+["fotografie-assets"](https://github.com/LuizCasagrande/assets/tree/main/fotografie) por exemplo.
 
 ## Contribuições
 
